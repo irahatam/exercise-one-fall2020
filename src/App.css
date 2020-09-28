@@ -1,59 +1,83 @@
-.App h1 {
-  font-size: 70px;
-}
-
 .ArticleListing {
   margin: 0 auto;
-  max-width: 1080px;
-  padding: 0 25px;
+  max-width: min(80%, 1080px);
+  padding: 0 10px;
+}
+
+.ArticleListing h1 {
+  font-size: 50px;
+  font-weight: normal;
 }
 
 .ArticleCard {
-  border: 1px solid black;
+  border: solid black 1px;
   display: flex;
   flex-direction: row;
-  margin: 30px 0;
-  padding: 25px 30px;
+  padding: 18px 28px;
+  margin: 40px 0;
+}
+
+.ArticleCard a {
+  color: rgb(6, 41, 255);
+  font-weight: bold;
+}
+
+.ArticleCard h2 {
+  margin-top: 0;
 }
 
 .ArticleCardImage {
   flex-basis: 30%;
-  padding-right: 30px;
+  padding-right: 28px;
 }
 
 .ArticleCardImage img {
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   width: 100%;
 }
 
 .ArticleCardText {
-  flex-basis: 70%
+  flex-basis: 70%;
+}
+
+.ArticleCardText p.Date {
+  margin-top: -12px;
+  margin-bottom: 18px;
+  padding-left: 4px;
+}
+
+.ArticleHeader p.Date {
+  margin-top: 2px;
 }
 
 .ArticleHeaderWrapper {
-  background-color: #e5e5e5;
-  background-size: cover;
+  background-color: #cccccc;
   background-position: center;
-  margin-bottom: 40px;
-  padding-bottom: 45px;
+  background-size: cover;
+  margin-bottom: 55px;
   padding-top: 65px;
+  padding-bottom: 25px;
 }
 
 .ArticleHeader {
-  margin: 0 auto 40px;
-  max-width: 600px;
+  margin: 0 auto;
+  max-width: min(80%, 600px);
+  padding: 0 10px;
 }
 
 .ArticleHeader h1 {
-  font-size: 48px;
+  font-size: 50px;
+  font-weight: normal;
   margin: 0;
 }
 
-.ArticleHeaderBlurb {
+p.Blurb {
   font-size: 20px;
 }
 
 .ArticleBody {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: min(80%, 600px);
+  padding: 0 10px;
 }

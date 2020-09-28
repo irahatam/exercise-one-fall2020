@@ -22,3 +22,12 @@ export const months = [
     "November",
     "December",
 ];
+
+export function theDate(date) {
+    const dayStr = days[date.getDay()];
+    const monthStr = months[date.getMonth()];
+    const day = date.getDate();
+    const year = date.getFullYear();
+  
+    return `${dayStr}, ${monthStr} ${day}, ${year}`;
+  }
