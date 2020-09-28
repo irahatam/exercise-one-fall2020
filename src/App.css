@@ -6,7 +6,6 @@
 
 .ArticleListing h1 {
   font-size: 50px;
-  font-weight: normal;
 }
 
 .ArticleCard {
@@ -18,7 +17,6 @@
 }
 
 .ArticleCard a {
-  color: rgb(6, 41, 255);
   font-weight: bold;
 }
 
@@ -32,8 +30,7 @@
 }
 
 .ArticleCardImage img {
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   width: 100%;
 }
 
