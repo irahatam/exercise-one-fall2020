@@ -1,13 +1,35 @@
-import React from "react";
+import React from 'react';
 
-import "./App.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
-import ArticleListing from "./containers/ArticleListing";
+import './App.css';
+
+import ArticleListing from './containers/ArticleListing';
+
+import Article from './containers/Article';
 
 function App() {
   return (
     <div className="App">
-      <ArticleListing />
+      <Router>
+        <Switch>
+
+          {/*   if .com/article, (individual page) display certain page   */}
+          <Route path="/article/:id">
+            <Article />
+          </Route>
+
+          {/*    main page    */}
+          <Route path ="/">
+            <ArticleListing />
+          </Route>
+
+        </Switch>
+      </Router>
     </div>
   );
 }

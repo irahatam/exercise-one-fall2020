@@ -1,3 +1,59 @@
-.App {
+.App h1 {
+  font-size: 70px;
+}
 
+.ArticleListing {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 25px;
+}
+
+.ArticleCard {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+  padding: 25px 30px;
+}
+
+.ArticleCardImage {
+  flex-basis: 30%;
+  padding-right: 30px;
+}
+
+.ArticleCardImage img {
+  height: auto;
+  width: 100%;
+}
+
+.ArticleCardText {
+  flex-basis: 70%
+}
+
+.ArticleHeaderWrapper {
+  background-color: #e5e5e5;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  padding-bottom: 45px;
+  padding-top: 65px;
+}
+
+.ArticleHeader {
+  margin: 0 auto 40px;
+  max-width: 600px;
+}
+
+.ArticleHeader h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.ArticleHeaderBlurb {
+  font-size: 20px;
+}
+
+.ArticleBody {
+  margin: 0 auto;
+  max-width: 600px;
 }
