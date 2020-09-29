@@ -5,9 +5,7 @@ import { theDate } from "../components/dateValues";
 
 function Article() {
   const { id } = useParams();
-  const articleData = Data.find((el) => el.id === id);
-
-  if (!articleData) return null;
+  const articleData = Data.find((article) => article.id === id);
 
   return (
     <section className="Article">
