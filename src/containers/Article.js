@@ -24,14 +24,14 @@ function Article() {
         </div>
       </header>
       <article className="ArticleBody">
-        {articleData.articleText.map((el, i) => {
-          switch (el.type) {
+        {articleData.articleText.map((article, i) => {
+          switch (article.type) {
             case "p":
-              return <p key={i}>{el.data}</p>;
+              return <p key={i}>{article.data}</p>;
             case "h2":
-              return <h2 key={i}>{el.data}</h2>;
+              return <h2 key={i}>{article.data}</h2>;
             case "h3":
-              return <h3 key={i}>{el.data}</h3>;
+              return <h3 key={i}>{article.data}</h3>;
             default:
               return null;
           }
