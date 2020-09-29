@@ -30,4 +30,4 @@ export function theDate(date) {
     const year = date.getFullYear();
   
     return `${dayStr}, ${monthStr} ${day}, ${year}`;
-  }
+}

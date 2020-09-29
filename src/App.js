@@ -17,13 +17,9 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-
-          {/*   if .com/article, (individual page) display certain page   */}
           <Route path="/article/:id">
             <Article />
           </Route>
-
-          {/*    main page    */}
           <Route path ="/">
             <ArticleListing />
           </Route>
